@@ -7,11 +7,13 @@
 //Подключаео шрифти з файлу 'dist/_global.scss'
 @import "_global";
 
-//Підключаємо стилі сторніки сайту
-@import "_header";
-//@import "_navigation";
-//@import "_footer";
-
 body {
    font-family: Montserrat;
+   font-size: $fz;
 }
+
+//Підключаємо стилі сторніки сайту
+@import "_header";
+@import "_burger";
+@import "_content";
+@import "_footer";

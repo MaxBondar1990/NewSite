@@ -1,22 +1,28 @@
 .content {
-   background-color: $colorContent;
    text-align: center;
+   font-size: inherit;
+   background-color: $colorContent;
+   h1{
+      text-align: center;
+      color: $colorBlue;
+      font-size: 2em;
+   }
    h3 {
       font-weight: 700;
       line-height: 75px;
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 24px;
+      font-size: 1.8em;
    }
 
    ul {
-      font-size: 18px;
+      font-size: 1.1em;
       text-align: left;
    }
 
    p {
-      font-size: 18px;
+      font-size: 1.1em;
       text-align: left;
    }
 }

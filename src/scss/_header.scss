@@ -1,12 +1,55 @@
 .header {
-   height: 100px;
+   --hh: 100px;
+   position: relative;
+
+   display: grid;
+   grid-template: 
+   ". n ." var(--hh)
+   /1fr 80% 1fr;
+
+   //display: flex;
+   //justify-content: center;
+   //align-items: center;
+
+   //height: var(--hh);
+   font-size: inherit;
    background-color: $colorTemlate;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   h1 {
-      font-weight: 900;
-      text-transform: uppercase;
-      font-size: 28px;
+   @media (max-width: 768px) {
+      display: grid;
+   grid-template: 
+   "n n ." var(--hh)
+   /1fr 80% 1fr;
+   }
+   &__main-menu{
+      grid-area: n;
+      justify-self: start;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      width: 60%;
+      font-size: inherit;
+      @media (max-width: 768px) {
+         position: absolute;
+         flex-direction: column;
+         justify-content: center;
+         font-size: 3em;
+         top: var(--hh);
+         left: -110vw;
+         width: 100vw;
+         height: calc(100vh - var(--hh));
+         background-color: $colorTemlate;
+         transition: left .3s;
+         &._action{
+            
+            left: 0;
+         }
+      }
+      
+   }
+   &__burger{
+      grid-area: n;
+      justify-self: end;
+      align-self: center;
    }
 }

@@ -10,8 +10,9 @@ flsFunctions.isWebp();
 //! const swiper = new Swiper(...);
 
 //Виклик функції додавання каласу в н6алащтуваннях передаємо ім'я класу по якому клік я до кого потрібно додати '_action'
-click.clickOnClassADDClassName('.burger-menu', '.main-menu');
-click.clickOnClassADDClassName('.burger-menu', '.footer');
+click.clickOnClassADDClassName('.burger-menu', '.header__main-menu');
+
+
 //console.log(click.clickOnClass());
 
 //console.log('action');
