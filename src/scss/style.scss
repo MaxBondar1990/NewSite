@@ -8,11 +8,12 @@
 @import "_global";
 
 body {
-   font-family: Montserrat;
+   font-family: $ff;
    font-size: $fz;
 }
 
 //Підключаємо стилі сторніки сайту
+@import "_modal";
 @import "_header";
 @import "_burger";
 @import "_content";

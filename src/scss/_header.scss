@@ -4,8 +4,8 @@
 
    display: grid;
    grid-template: 
-   ". n ." var(--hh)
-   /1fr 80% 1fr;
+   "m-menu burger modal" var(--hh)
+   /80% 1fr 1fr;
 
    //display: flex;
    //justify-content: center;
@@ -17,11 +17,11 @@
    @media (max-width: 768px) {
       display: grid;
    grid-template: 
-   "n n ." var(--hh)
-   /1fr 80% 1fr;
+   "m-menu burger modal" var(--hh)
+   /80% 1fr 1fr;
    }
    &__main-menu{
-      grid-area: n;
+      grid-area: m-menu;
       justify-self: start;
       display: flex;
       justify-content: space-around;
@@ -48,8 +48,18 @@
       
    }
    &__burger{
-      grid-area: n;
+      grid-area: burger;
       justify-self: end;
       align-self: center;
+   }
+   &__modal-btn {
+      grid-area: modal;
+      align-self: center;
+      height: 3em;
+      border-radius: 1em;
+      text-transform: uppercase;
+
+      color: $colorWhite;
+      background-color: $colorBlue;
    }
 }
