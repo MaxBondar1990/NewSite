@@ -4,17 +4,10 @@
 //Підключаю шрифти з файлу 'dist/fonts.scss'
 @import "fonts";
 
-//Подключаео шрифти з файлу 'dist/_global.scss'
-@import "_global";
-
 body {
-   font-family: $ff;
-   font-size: $fz;
+   font-family: Montserrat;
+   font-size: 14px;
 }
 
 //Підключаємо стилі сторніки сайту
-@import "_modal";
-@import "_header";
-@import "_burger";
-@import "_content";
-@import "_footer";
+@import "_baner";
